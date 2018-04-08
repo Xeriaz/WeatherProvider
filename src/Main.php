@@ -39,19 +39,3 @@ $delegating = new DelegatingWeatherProvider($providers);
 
 $delegating->foo();
 
-
-//$OpenWeatherMapWPFetchedCity = $OpenWeatherMapWP->fetchCity($locationObject);
-//$OpenWeatherMapWPFetchedTemperature = $OpenWeatherMapWP->fetchTemperature($locationObject);
-//
-//$YahooWPFetchedCity = $YahooWP->fetchCity($locationObject);
-//$YahooWPFetchedTemperature = $YahooWP->fetchTemperature($locationObject);
-//
-//$OWMWPMessage = 'OWMWP: Currently in ' . $OpenWeatherMapWPFetchedCity . ' is ' . $OpenWeatherMapWPFetchedTemperature . '°C' . PHP_EOL;
-//$YahooWPMessage = 'Yahoo: Currently in ' . $YahooWPFetchedCity . ' is ' . $YahooWPFetchedTemperature . '°C' . PHP_EOL;
-//
-//echo $OWMWPMessage;
-//echo $YahooWPMessage;
-
-
-
-
