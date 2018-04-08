@@ -26,8 +26,7 @@ foreach ($locations as $loc) {
 }
 
 if ($locationObject === '') {
-    echo 'City or coordinates does not exist';
-    die;
+    die('City or coordinates does not exist');
 }
 
 $OpenWeatherMapWP = new OpenWeatherMapWeatherProvider($locationObject);

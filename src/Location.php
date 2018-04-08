@@ -22,12 +22,12 @@ class Location
         echo 'City: ' . $this->city . ' Latitude: ' . $this->latitude . ' Longitude: ' . $this->longitude . PHP_EOL;
     }
 
-    public function getTemperature() : float
+    public function getTemperature(): float
     {
         return $this->temperature;
     }
 
-    public function getCity() : string
+    public function getCity(): string
     {
         return $this->city;
     }
