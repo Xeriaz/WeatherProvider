@@ -17,7 +17,7 @@ class Location
         $this->temperature = $temperature;
     }
 
-    function printInfo() : void
+    public function printInfo()
     {
         echo 'City: ' . $this->city . ' Latitude: ' . $this->latitude . ' Longitude: ' . $this->longitude . PHP_EOL;
     }
