@@ -16,12 +16,12 @@ class OpenWeatherMapWeatherProvider implements WeatherInterface
 
         $phpObj = json_decode($json);
 
-        $temp = $phpObj->main->temp;
-
+        $temp = floatval($phpObj->main->temp);
         return new Weather($temp);
     }
 
-    private function getWeatherByCoordQuery(Location $location): string {
+    private function getWeatherByCoordQuery(Location $location): string
+    {
         $lat = $location->getLat();
         $lon = $location->getLon();
 

@@ -9,7 +9,7 @@ class Weather
 
     public function __construct(float $temperature)
     {
-        $this->temperature;
+        $this->temperature = $temperature;
     }
 
     public function getTemperature(): float
