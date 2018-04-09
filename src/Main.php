@@ -9,11 +9,11 @@ require_once '../vendor/autoload.php';
 // Vilnius Coordinates
 $location = new Location(54.687157, 25.279652);
 
-//$OpenWeatherMapWP = new OpenWeatherMapWeatherProvider();
+$OpenWeatherMapWP = new OpenWeatherMapWeatherProvider();
 $YahooWP = new YahooWeatherProvider();
 
+$OpenWeatherMapWP->fetch($location);
 $YahooWP->fetch($location);
-die;
 
 $providers = [$OpenWeatherMapWP, $YahooWP];
 
