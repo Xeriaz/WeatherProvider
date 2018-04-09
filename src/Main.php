@@ -6,31 +6,14 @@ use Nfq\Weather\Location;
 
 require_once '../vendor/autoload.php';
 
-// Generate locations list
-$citiesArray = ['Alytus', 'Vilnius', 'Kaunas', 'Druskininkai', 'Klaipeda'];
+// Vilnius Coordinates
+$location = new Location(54.687157, 25.279652);
 
-$i = 0;
-$locations = [];
+//$OpenWeatherMapWP = new OpenWeatherMapWeatherProvider();
+$YahooWP = new YahooWeatherProvider();
 
-foreach ($citiesArray as $city) {
-    $locations[] = new Location($city, $i, $i, rand(10, 20));
-    $i++;
-}
-
-$locationObject = '';
-foreach ($locations as $loc) {
-    if ($loc->getCity() === $argv[1]) {
-        $locationObject = $loc;
-        break;
-    }
-}
-
-if ($locationObject === '') {
-    die('City or coordinates does not exist');
-}
-
-$OpenWeatherMapWP = new OpenWeatherMapWeatherProvider($locationObject);
-$YahooWP = new YahooWeatherProvider($locationObject);
+$YahooWP->fetch($location);
+die;
 
 $providers = [$OpenWeatherMapWP, $YahooWP];
 

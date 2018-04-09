@@ -4,8 +4,36 @@ namespace Nfq\Weather;
 
 class YahooWeatherProvider implements WeatherInterface
 {
+    private $BASE_URL = "http://query.yahooapis.com/v1/public/yql";
+
     public function fetch(Location $location): Weather
     {
-        // TODO: Implement fetch() method.
+        $yql_query = $this->getQuery($location);
+
+        $yql_query_url = $this->BASE_URL . "?q=" . urlencode($yql_query) . "&format=json";
+
+        // Make call with cURL
+        $session = curl_init($yql_query_url);
+        curl_setopt($session, CURLOPT_RETURNTRANSFER,true);
+        $json = curl_exec($session);
+
+        // Convert JSON to PHP object
+        $phpObj = json_decode($json);
+
+        $temp = $phpObj->query->results->channel->item->condition->temp;
+
+        return new Weather($temp);
+    }
+
+    private function getQuery(Location $location): string
+    {
+        $lat = $location->getLat();
+        $lon = $location->getLon();
+
+        $query = 'SELECT item.condition.temp FROM weather.forecast '.
+            ' WHERE woeid IN (SELECT woeid FROM geo.places WHERE text="(' .
+            $lat . ',' . $lon .')") and u="c"';
+
+        return $query;
     }
 }
