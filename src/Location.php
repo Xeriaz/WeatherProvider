@@ -4,31 +4,23 @@ namespace Nfq\Weather;
 
 class Location
 {
-    private $city;
     private $latitude;
     private $longitude;
-    private $temperature;
 
-    function __construct(string $city, float $latitude, float $longitude, float $temperature)
+    function __construct(float $latitude, float $longitude)
     {
-        $this->city = $city;
         $this->latitude = $latitude;
         $this->longitude = $longitude;
-        $this->temperature = $temperature;
     }
 
-    public function printInfo()
+    public function getLat(): float
     {
-        echo 'City: ' . $this->city . ' Latitude: ' . $this->latitude . ' Longitude: ' . $this->longitude . PHP_EOL;
+        return $this->latitude;
     }
 
-    public function getTemperature(): float
+    public function getLon(): float
     {
-        return $this->temperature;
+        return $this->longitude;
     }
 
-    public function getCity(): string
-    {
-        return $this->city;
-    }
 }

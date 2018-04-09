@@ -4,9 +4,6 @@ namespace Nfq\Weather;
 
 interface WeatherInterface {
 
-    public function fetchTemperature(): float;
+    public function fetch(Location $location): Weather;
 
-    public function fetchCity(): string;
-
-    public function getProviderName(): string;
 }
