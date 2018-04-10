@@ -12,7 +12,6 @@ class DelegatingWeatherProvider implements WeatherInterface {
     public function __construct($providers)
     {
         $this->providers = $providers;
-
     }
 
     public function foo()
@@ -21,16 +20,10 @@ class DelegatingWeatherProvider implements WeatherInterface {
         $location = new Location(54.687157, 25.279652);
 
         foreach ($this->providers as $provider) {
+            //  TODO fix exception
             try {
                 $weatherObj = $provider->fetch($location);
-
-                if (!$weatherObj){
-                    return;
-                }
-
                 echo 'Currently temperature is: ' . $weatherObj->getTemperature() . PHP_EOL;
-                return;
-
             } catch (\Exception $e) {}
         }
     }

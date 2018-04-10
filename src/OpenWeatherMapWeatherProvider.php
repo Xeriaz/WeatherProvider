@@ -17,12 +17,15 @@ class OpenWeatherMapWeatherProvider implements WeatherInterface
         $url = $this->BASE_URL . $this->appId .
             $this->getWeatherByCoordQuery($location);
 
-        $json = file_get_contents($url);
+        //  TODO fix exception
+        try {
+            $json = file_get_contents($url);
 
-        $phpObj = json_decode($json);
+            $phpObj = json_decode($json);
 
-        $temp = floatval($phpObj->main->temp);
-        return new Weather($temp);
+            $temp = floatval($phpObj->main->temp);
+            return new Weather($temp);
+        } catch (\Exception $e) { }
     }
 
     private function getWeatherByCoordQuery(Location $location): string

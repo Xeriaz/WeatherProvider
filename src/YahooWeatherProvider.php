@@ -20,9 +20,12 @@ class YahooWeatherProvider implements WeatherInterface
         // Convert JSON to PHP object
         $phpObj = json_decode($json);
 
-        $temp = $phpObj->query->results->channel->item->condition->temp;
+        //  TODO fix exception
+        try {
+            $temp = $phpObj->query->results->channel->item->condition->temp;
+            return new Weather($temp);
+        } catch (\Exception $e) { }
 
-        return new Weather($temp);
     }
 
     private function getQuery(Location $location): string
