@@ -5,7 +5,7 @@ namespace Nfq\Weather;
 use Nfq\Weather\OpenWeatherMapWeatherProvider;
 use Nfq\Weather\YahooWeatherProvider;
 
-class DelegatingWeatherProvider {
+class DelegatingWeatherProvider implements WeatherInterface {
 
     private $providers;
 
@@ -24,14 +24,20 @@ class DelegatingWeatherProvider {
             try {
                 $weatherObj = $provider->fetch($location);
 
-                if ($weatherObj !== NULL){
-                    echo 'Currently temperature is: ' . $weatherObj->getTemperature() . PHP_EOL;
+                if (!$weatherObj){
                     return;
                 }
 
-            } catch (\Exception $e) {
-            }
+                echo 'Currently temperature is: ' . $weatherObj->getTemperature() . PHP_EOL;
+                return;
+
+            } catch (\Exception $e) {}
         }
+    }
+
+    public function fetch(Location $location): Weather
+    {
+        // TODO: Implement fetch() method.
     }
 
 }

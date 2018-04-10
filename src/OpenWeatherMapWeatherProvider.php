@@ -5,11 +5,16 @@ namespace Nfq\Weather;
 class OpenWeatherMapWeatherProvider implements WeatherInterface
 {
     private $BASE_URL = 'http://api.openweathermap.org/data/2.5/weather?id=524901&APPID=';
-    private $APPID = 'c5fb386073ea22eb1f32d78dcdb0197d';
+    private $appId;
+
+    public function __construct(string $appId)
+    {
+        $this->appId = $appId;
+    }
 
     public function fetch(Location $location): Weather
     {
-        $url = $this->BASE_URL . $this->APPID .
+        $url = $this->BASE_URL . $this->appId .
             $this->getWeatherByCoordQuery($location);
 
         $json = file_get_contents($url);
@@ -26,5 +31,10 @@ class OpenWeatherMapWeatherProvider implements WeatherInterface
         $lon = $location->getLon();
 
         return '&weather&lat='. $lat .'&lon=' . $lon . '&units=metric';
+    }
+
+    public function setAppId($appId)
+    {
+        $this->appId = $appId;
     }
 }

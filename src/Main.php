@@ -6,7 +6,7 @@ use Nfq\Weather\Location;
 
 require_once '../vendor/autoload.php';
 
-$OpenWeatherMapWP = new OpenWeatherMapWeatherProvider();
+$OpenWeatherMapWP = new OpenWeatherMapWeatherProvider('c5fb386073ea22eb1f32d78dcdb0197d');
 $YahooWP = new YahooWeatherProvider();
 
 $providers = [$OpenWeatherMapWP, $YahooWP];
