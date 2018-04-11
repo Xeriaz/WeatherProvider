@@ -15,16 +15,22 @@ class YahooWeatherProvider implements WeatherInterface
         // Make call with cURL
         $session = curl_init($yql_query_url);
         curl_setopt($session, CURLOPT_RETURNTRANSFER,true);
-        $json = curl_exec($session);
 
+        $json = curl_exec($session);
         // Convert JSON to PHP object
         $phpObj = json_decode($json);
 
-        //  TODO fix exception
-        try {
-            $temp = $phpObj->query->results->channel->item->condition->temp;
-            return new Weather($temp);
-        } catch (\Exception $e) { }
+        if(@$phpObj->error) {
+            throw new \InvalidArgumentException($phpObj->error->description);
+        }
+
+        $temp = $phpObj->query->results->channel->item->condition->temp;
+
+        if (!$temp) {
+            throw new \InvalidArgumentException('Provider error');
+        }
+
+        return new Weather($temp);
 
     }
 

@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="73c49f6a-540f-4d2e-a2f0-0130e1d71382" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DelegatingWeatherProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DelegatingWeatherProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OpenWeatherMapWeatherProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/OpenWeatherMapWeatherProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/YahooWeatherProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/YahooWeatherProvider.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,8 +58,8 @@
           <file leaf-file-name="YahooWeatherProvider.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/YahooWeatherProvider.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="30" />
+                <state relative-caret-position="400">
+                  <caret line="25" selection-start-line="25" selection-end-line="25" />
                 </state>
               </provider>
             </entry>
@@ -90,11 +86,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="DelegatingWeatherProvider.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="DelegatingWeatherProvider.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/DelegatingWeatherProvider.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+                <state relative-caret-position="357">
+                  <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
                   <folding>
                     <element signature="e#31#77#0#PHP" expanded="true" />
                   </folding>
@@ -102,11 +98,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="OpenWeatherMapWeatherProvider.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="OpenWeatherMapWeatherProvider.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/OpenWeatherMapWeatherProvider.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+                <state relative-caret-position="340">
+                  <caret line="20" selection-start-line="20" selection-end-line="21" />
                 </state>
               </provider>
             </entry>
@@ -127,11 +123,11 @@
         <option value="$PROJECT_DIR$/src/WeatherInterface.php" />
         <option value="$PROJECT_DIR$/src/Location.php" />
         <option value="$PROJECT_DIR$/src/Weather.php" />
-        <option value="$PROJECT_DIR$/src/Main.php" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/YahooWeatherProvider.php" />
-        <option value="$PROJECT_DIR$/src/OpenWeatherMapWeatherProvider.php" />
         <option value="$PROJECT_DIR$/src/DelegatingWeatherProvider.php" />
+        <option value="$PROJECT_DIR$/src/Main.php" />
+        <option value="$PROJECT_DIR$/src/OpenWeatherMapWeatherProvider.php" />
+        <option value="$PROJECT_DIR$/src/YahooWeatherProvider.php" />
       </list>
     </option>
   </component>
@@ -159,7 +155,7 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1919" />
+    <option name="x" value="-1" />
     <option name="y" value="-11" />
     <option name="width" value="1922" />
     <option name="height" value="1049" />
@@ -239,12 +235,13 @@
       <workItem from="1523370796739" duration="45000" />
       <workItem from="1523370852621" duration="3000" />
       <workItem from="1523370933483" duration="131000" />
-      <workItem from="1523386541418" duration="2989000" />
+      <workItem from="1523386541418" duration="3434000" />
+      <workItem from="1523435644218" duration="3466000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37537000" />
+    <option name="totallyTimeSpent" value="41448000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -256,18 +253,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1919" y="-11" width="1922" height="1049" extended-state="6" />
+    <frame x="-1" y="-11" width="1922" height="1049" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13553895" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.13553895" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32967034" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" weight="0.32977587" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32967034" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32967034" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32894737" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2978022" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2978022" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -279,25 +276,25 @@
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.20117396" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="4" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.32894737" />
-      <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
-      <window_info anchor="right" id="Database" order="0" weight="0.32977587" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.32894737" />
-      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="5" />
-      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13553895" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32967034" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32967034" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32894737" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32977587" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2978022" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -625,13 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Weather.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -642,6 +632,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Weather.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -649,27 +646,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/YahooWeatherProvider.php">
+    <entry file="file://$PROJECT_DIR$/src/DelegatingWeatherProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="30" />
+        <state relative-caret-position="357">
+          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+          <folding>
+            <element signature="e#31#77#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/OpenWeatherMapWeatherProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DelegatingWeatherProvider.php">
+    <entry file="file://$PROJECT_DIR$/src/YahooWeatherProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-          <folding>
-            <element signature="e#31#77#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="400">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
