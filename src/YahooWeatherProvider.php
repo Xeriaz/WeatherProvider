@@ -21,7 +21,7 @@ class YahooWeatherProvider implements WeatherInterface
         $phpObj = json_decode($json);
 
         if(@$phpObj->error) {
-            throw new \InvalidArgumentException($phpObj->error->description);
+            throw new \InvalidArgumentException('Error: ' . $phpObj->error->description);
         }
 
         $temp = $phpObj->query->results->channel->item->condition->temp;
